@@ -1,0 +1,525 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1">
+  <title>
+    RELATIONAL DATA BASE MANAGEMENT SYSTEM
+  </title>
+
+  <link rel="icon" href="../images/fevicon.jpg">
+  <link href="model/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/page-builder.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/settings.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/style-core.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/kingster-style-custom.css" type="text/css" media="all" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700%2C400" rel="stylesheet" property="stylesheet"
+    type="text/css" media="all" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CABeeZee%3Aregular%2Citalic&amp;subset=latin%2Clatin-ext%2Cdevanagari&amp;ver=5.0.3"
+    type="text/css" media="all" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <style>
+    .accordion-button {
+      font-size: 1.3rem;
+    }
+
+    .sanjus {
+      color: white;
+      bottom: 2px;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      z-index: 4;
+      border-bottom: 5px solid #e1453d;
+    }
+
+    .my-5 {
+      margin-top: 10rem !important;
+      margin-bottom: 3rem !important;
+    }
+
+    .alert {
+      position: relative;
+      top: 70px;
+    }
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+  </style>
+</head>
+
+<body
+  style="background-image:url(../images/background.jpg); background-repeat: no-repeat; background-attachment:scroll; background-size: cover;">
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#login">SP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="http://www.irdtuttarakhand.org.in/ubter/">IRDT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page"
+              href="http://www.irdtuttarakhand.org.in/ubter/Course.aspx?code=05">1,2 & 3 SEM</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              4th Semester
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="cns.html">COMPUTER NETWORK AND SECURITY</a></li>
+              <li><a class="dropdown-item" href="csoa.html">COMPUTER SYSTEM ORGANIZATION AND
+                  ARCHITECTURE</a></li>
+              <li><a class="dropdown-item" href="data_structure_c.html">DATA STRUCTURE USING C</a></li>
+              <li><a class="dropdown-item" href="internet_&_web_tech.html">INTERNET AND WEB TECHNOLOGY</a>
+              </li>
+              <li><a class="dropdown-item active" href="database.html">RELATIONAL DATA BASE MANAGEMENT SYSTEM</a>
+              </li>
+              <li><a class="dropdown-item" href="oops.html">OBJECT ORIENTED CONCEPTS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              5th Semester
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"> Working on it</a></li>
+              <div class="d-flex align-items-center m-4">
+                <strong>Loading... </strong>
+                <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+              </div>
+              <!-- <li><a class="dropdown-item" href="#">Data Mining & Warehousing</a></li>
+                            <li><a class="dropdown-item" href="#">Multimedia System</a></li>
+                            <li><a class="dropdown-item" href="#">Open Source Technology </a>
+                            </li> -->
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              6th Semester
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Concept of .Net Technology </a></li>
+              <li><a class="dropdown-item" href="#">Data Mining & Warehousing</a></li>
+              <li><a class="dropdown-item" href="#">Multimedia System</a></li>
+              <li><a class="dropdown-item" href="#">Open Source Technology </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../about.html">Contact me</a>
+          </li>
+
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- alert -->
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>NOTE! this is not an official website.</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+
+
+
+
+  <div class="container my-5">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h3 class="text-primary-emphasis mx-4 pt-4 pb-4">
+          054005-RELATIONAL DATA BASE MANAGEMENT SYSTEM
+        </h3>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse_obj" aria-expanded="false" aria-controls="collapse_obj">
+              OBJECTIVES
+            </button>
+          </h2>
+          <div id="collapse_obj" class="accordion-collapse collapse" aria-labelledby="heading8"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              On completion subject, the students must be able to ?
+              <ul>
+                <li>Define data, database, database Management systems and data base models ?</li>
+                <li>Compare file processing and database system. ? </li>
+                <li>Study about architecture of DBMS.</li>
+                <li>Understand the concept of Data warehousing, Big Data and client/Server Technology ?</li>
+                <li>State CODD’s Rules. ? </li>
+                <li>Explain normalization and explain different types of Normal Forms. ?</li>
+                <li>Create Normalized Database structure files. ?</li>
+                <li>Perform all database DDL, DML, DCL, and all related commands. ?</li>
+                <li>Write Logical and Conditional statement for Database Query. ?</li>
+                <li>Write procedures and functions. ?Create and use Triggers.</li>
+                <li>Understanding Data warehousing, Big data and No SQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseLab" aria-expanded="false" aria-controls="collapseLab">
+              LAB EXERCISES
+            </button>
+          </h2>
+          <div id="collapseLab" class="accordion-collapse collapse" aria-labelledby="headingLab"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <b> PART - A </b> <br>
+              1. Install, configure and connect to MySQL server and MySQL workbench in
+              Windows. Create a database, backup and restore the database. <br>
+              2. Create a simple database for Social Networking Platform with the following
+              entities. <br>
+              <b> a. users -table</b> <br>
+              id - auto increment, primary key field username - varchar (60) email - varchar
+              (255) address - varchar (150) dob - timestamp is_active - TINYINT
+              registered_on - timestamp last_logged_on - timestamp <br>
+              <b> b. friends -table_name</b> <br>
+              id - auto increment, primary key field user_id - unsigned INT, NOT NULL
+              friend_name - varchar(60) <br>
+              <b> c. users_profiles</b> <br>
+              id - user_id location <br>
+              <b> Perform the following operations on above entities.</b> <br>
+              i) Create table with fields of appropriate data types. <br>
+              ii) Verify the table created using DESCRIBE command <br>
+              iii) Insert 10 users and some friendship data in friends table <br>
+              iv) Add a ‘gender’field of type CHAR(1). Allow NULLvalues for this field. <br>
+              v) Rename friends table to users_friends <br>
+              vi) Modify the dob field type to date_of_birth. <br>
+              vii) Remove the fieldis_active <br>
+              viii) Drop the table users_profiles <br> <br>
+
+              3. Perform the following operations on database created in Ex.no.2 using
+              SELECTcommand. <br>
+              i) Fetch the most recent 5 register edusers. <br>
+              ii) Fetch all the friends of user_iduserx <br>
+              iii) Fetch all the users who are above 21 year sold. <br>
+              iv) Find the count of users who signed-up with gmail Id. (ie. users' email
+              endswith @gmail.com) <br>
+              v) Fetch all the users who registered last month. <br>
+              vi) Fetch all users of ‘Chennai’location. <br>
+              vii) Find actively monthly and weekly users count. ie. Count of users who have
+              logged-in in the last 15days. <br>
+              viii)Find how many users who have not mentioned their gender. <br>
+              4. a) Create a database 'Polytechnic_College'. Create 2 users namely ‘Staff’
+              and ‘student’. <br> <br>
+              - Grant all privileges to the user 'Staff ‘and grant only ‘create’privilege
+              to ‘student’user and verify the same . <br> <br>
+              - Revoke all privileges to the 2 users and verify thesame. <br> <br>
+              b) Implement the following transaction control statements <br> <br>
+              i) Commit ii) Roll back iii) Save point <br> <br>
+              5. Create a table ‘author’ with the following structure author_id author_name
+              address mobile book_title pages published_on <br> <br>
+              i) Insert 4 books published by 3 authors each. (12records) <br> <br>
+              ii) Fetch all the rows and observe how the data duplicated. <br> <br>
+              iii) Apply 1st and 2nd normal forms to fixit. <br> <br>
+              6. Create table, "mail" with the following fields DATE TIME, # when message was
+              sent srcuser VARCHAR(8), # sender (source user and host) srchost
+              VARCHAR(20), dstuser VARCHAR(8), # recipient (destination user and host)
+              dsthost VARCHAR(20), size BIGINT, # message size in bytes <br>
+              i) Sort the mail with the largest mail being first. <br>
+              ii) List the mails that is over 25MB <br>
+              iii) Remove the duplicate rows from result set. <br>
+              iv) Execute a 'SELECT' query and store its result in a user defined variable. <br>
+              Use another ‘SELECT' to display the value of the variable. <br>
+
+              7. Create two tables with the following structure. <br>
+              a) Requests table <br>
+              request_id - UNSIGNED, INT, AUTO INCREMENT, PRIMARY KEY <br>
+              from_id - INTto_id - INT <br>
+              b) requests_log table <br>
+              request_id - FOREIGN KEY refers to request_id field of requests table <br>
+              request_status - enum ("PENDING", "APPROVED", "REJECTED") Create <br>
+              a view combining both tables to display all the requests along with their most
+              recent status for the requests. <br> <br>
+              8. Create a library Table with proper fields. Create another table called Library1 and
+              insert rows from Library table. <br>
+              Hint:
+              CREATE TABLE new_table LIKE original_table; <br> <br>
+              INSERTINTO new_table SELECT* FROM original_table; <br>
+              9) Create a table to store the details of a customer in a Bank. Do some transactions
+              like withdrawal, deposit. Find the Balance amount (Credit Limit). Based on
+              customer’s credit limit, write a program using IF or CASE flow control
+              statements to find the customer levels namely SILVER, GOLD or
+              PLATINUM. <br>
+              If the Credit limit is
+              • greater than 50K, then the customer level is PLATINUM <br>
+              • less than 50K and greater than 10K, then the customer level isGOLD <br>
+              • less than 10K, then the customer level is SILVER <br> <br>
+              10)Create two tables with the following structure. <br>
+              a) users - tablename <br>
+              user_id - UNSIGNED, INT, AUTO INCREMENT, PRIMARYKEY <br>
+              username -VARCHAR (60) password - VARCHAR (128) email- VARCHAR
+              (255) <br>
+              b) users_profiles <br>
+              user_id - FOREIGN KEY refers to user_id field of user table first_name - <br>
+              VARCHAR(60) last_name - VARCHAR(60) mobile - VARCHAR(15)
+              i) SELECT all the users along with their profile details. (Hint: Use
+              INNERJOIN) <br>
+              ii) SELECT the users who do not have profiles (Hint: USE LEFT JOIN
+              and exclude the rows generated with NULL values from joining
+              table) <br>
+              11. Create an employee database and create a stored procedure that accepts
+              employee _Id as input and returns complete details of employee as
+              output. <br> <br>
+              12. Create two tables with the following structure
+              Authors <br> <br>
+              author_id - INT <br> <br>
+              name VARCHAR (60) <br> <br>
+              titles_count INT -- holds the total number numbers of titles authored
+              Titles <br> <br>
+              author_id - INT <br> <br>
+              Name VARCHAR (512) -- name of the title <br> <br>
+              a. Create a trigger to update the titles count field of respective row in
+              authors table each time a title gets inserted into titles table. <br>
+              b. Create a log table with the following structure author_id -INT
+              Name VARCHAR (512) -- name of the title <br>
+              Status VARCHAR (25) --- ADDITION, DELETION, UPDATION. <br> <br>
+              13. Create a table containing phone number, user name, address of the phone user.
+              Write a function to search the address using phone number. <br> <br>
+              14. Create a table to store the salary details of the employees in a company.
+              Declare the cursor id to contain employee number, employee name and net
+              salary. Use cursor to update the employee. <br> <br>
+              15. Create a table 'stock' to contains the item code, item name, current stock, date
+              of last purchase. Write a stored procedure to seek for an item using item code
+              and delete it, if the date of last purchase is before one year from the current
+              date. If not, update the current stock. <br>
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            1. Introduction
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            1. Introduction
+            Database Systems; Database and its purpose, Characteristics of the database
+            approach, Advantages and disadvantages of database systems. Classification
+            RELATIONAL DATA BASE MANAGEMENT SYSTEMS
+            L T P
+            4 - 5
+            Subject Code : 054005
+            68
+            of DBMS Users; Actors on the scene, Database Administrators, Database
+            Designers, End Users, System Analysts and Application Programmers,
+            Workers behind the scene (DBMS system designers and implementers, tool
+            developers, operator and maintenance personnel)
+
+          </div>
+
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              2. Database System Concepts and Architecture
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Data models, schemas, instances, data base state. DBMS Architecture; The
+              External level, The conceptual level, The internal level, Mappings. Data
+              Independence; Logical data Independence, Physical data Independence.
+              Database Languages and Interfaces; DBMS Language, DBMS Interfaces.
+              Classification of Database Management Systems. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              3. Data Modelingusing E.R. Model (Entity Relationship Model)
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Data Models Classification; File based or primitive models, traditional data
+              models, semantic data models, Entities and Attributes, Entity types and Entity
+              sets, Key attribute and domain of attributes, Relationship among entities
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              4. Relational Model
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              elational Model Concepts: Domain, Attributes, Tuples and Relations.
+              Relational constraints and relational database schemes; Domain constraints,
+              Key constraints and constraints on Null. Relational databases and relational
+              database schemes, Entity integrity, referential integrity and foreign key
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              5. Normalization
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Data Redundancy, Concept of Normalization, Need of Normalization, Insert
+              Delete and Update Anomalies, functional dependencies, Finding Candidate
+              Keys using functional dependencies, First, Second and Third normal forms,
+              Boyce/Codd normal form, Lossless Join decomposition and dependency
+              preservation, Set, Cardinality and Arity of Set, Cartesian Product, Join- Natural
+              Join, Inner Join, Equi-join, Left and Right Outer Join, Full Join. </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              6. SQL : Data base create
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Oracle DBA, Oracle Forms, Report Writer, Oracle Graphics, SQL Data types:
+              Creating a Table, Creating table from table, Insertion of data into tables:
+              Inserting single row of data into a table from another table, Updating the
+              contents of a table: Deletion of all row and deletion of specified number of
+              rows, Select command; Global data extract, Retrieval of specific columns from
+              a table, Eliminations of duplicates from the select statement, Sorting of data in
+              a table, Selecting a data set from table data, Modifying tables: Adding new
+              column, modifying existing columns, After table, Removing, Deleting,
+              Dropping tables, data Constraints: Column level, table level Constraints,
+              Computations in expression: Arithmetic, Logical operator, Range searching,
+              Pattern matching, Oracle functions, Grouping data, Joins, Sub queries, Union,
+              Intersect, minus clause, Indexes, Views, Sequences, Granting, Revoking
+              statement.
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTB" aria-expanded="false" aria-controls="collapseTB">
+              TEXT BOOK
+            </button>
+          </h2>
+          <div id="collapseTB" class="accordion-collapse collapse" aria-labelledby="headingTB"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              1. My SQLPaul DuBios Addison Wesley (Fourth Edition) <br>
+              2. Database System Concepts Silber Schatz A. and Korth H McGraw Hill
+              Education (India) Pvt Limited, Sixth Edition <br>
+              3. Murach’s MySQL Joel Murach Shroff / Murach (2012) <br>
+              4. NO SQL Distilled PRAMOD J. SADALAGE MARTIN FOWLER Addison
+              Wesley (First Edition)
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div>
+    <div class="container sanjus">
+      <h5 class="sanju">
+        Website Developed by
+        <button class="btn btn-dark " data-bs-toggle="modal" data-bs-target="#login">Sandeep Petwal</button>
+      </h5>
+    </div>
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="login" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="col-lg-12 mx-4 my-4">
+            <img src="../images/fevicon.jpg" alt="Profile" height="140" width="140">
+            <h2 class="fw-normal">Sandeep Petwal</h2>
+            <p>👋 Hello i'm Sandeep, <br> i am student of computer science.</p>
+            <p><a class="btn btn-light" href="mailto:sandeeppetwal51@gmail.com">Contact me »</a></p>
+            <span class="btn btn-light"> <a href="https://t.me/Ramabhakta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                  class="bi bi-telegram" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                </svg></a>
+            </span>
+            <span class="btn btn-light"><a href="https://mobile.twitter.com/Sanju_Petwal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                </svg></a>
+            </span>
+            <span class="btn btn-light"><a href="mailto:sandeeppetwal51@gmail.com"><svg
+                  xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                </svg></a>
+            </span>
+            <span class="btn btn-light">
+              <a href="https://www.linkedin.com/in/sandeep-prasad-1bb793238"><svg xmlns="http://www.w3.org/2000/svg"
+                  width="32" height="32" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg></a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
