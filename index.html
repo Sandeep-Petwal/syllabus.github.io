@@ -10,16 +10,29 @@
         content="Uttarakhand polytechnic CSE IRDT unofficial syllabus. SANDEEP PETWAL. uttarakhand polytechnic syllabus">
     <link rel="icon" href="images/fevicon.jpg">
 
+    <!-- font wesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <!-- bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+
+
     <style>
+        .col-sm-10,
+        .row {
+            background-color: #fcf7f7;
+        }
+
         body {
+            font-family: 'Dosis', sans-serif !important;
             font-size: 1px;
             margin: 0;
             padding: 0;
-            background-color: #E4E4D0;
         }
 
         .main_container {
@@ -47,6 +60,10 @@
             font-size: larger;
         }
 
+        li {
+            font-family: monospace;
+        }
+
         @media screen and (width <=500px) {
             .qr {
                 visibility: hidden;
@@ -57,14 +74,20 @@
             }
 
             .pro {
+                margin-top: -150px;
                 visibility: visible;
             }
 
             li {
                 font-size: medium !important;
-                font-weight: normal !important;
-
+                font-weight: bold !important;
             }
+        }
+
+        marquee {
+            color: rgb(224, 92, 92);
+            font-weight: 700;
+            padding: 5px;
         }
     </style>
 
@@ -87,8 +110,10 @@
 
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h4>Welcome to Uttarakhand polytechnic E-Syllabus unofficial Portal</h4>
+                    <h4>Welcome to Uttarakhand polytechnic E-Syllabus Portal</h4>
                 </div>
+
+                <marquee behavior="" direction="">NOTE : this is not an official website. Made for Educational Perposes Only.</marquee>
 
                 <!-- to show on desktop -->
                 <div class="main_container qr">
@@ -411,12 +436,8 @@
                         <div lass="col-sm-3"></div>
                         <div class="col-sm-6">
                             <div class="row">
-                                <h1 style=" text-align:right; font-size:20px">Website Developed By <a href="about.html"
-                                        target="_blank">Sandeep
-                                        Petwal</a></h1>
-
                                 <!-- hitwebcounter Code START -->
-                                <span style="margin-left: 25%;">
+                                <span style="width: 50%; margin: auto;">
                                     <b>VIEWS</b>
                                     <span style=" position: relative; top: -6px; padding-right: 14px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
@@ -446,15 +467,6 @@
     </div>
 
 
-
-
-
-
-
-
-    <!-- Your website content goes here -->
-
-    <!-- Stylish Footer -->
     <footer style="background-color: #333; color: #fff; padding: 20px;">
         <div style="text-align: center;">
             <h2>Contact Me</h2>
@@ -464,12 +476,12 @@
 
         <div style="text-align: center; margin-top: 20px;">
             <!-- Add social media icons and links here (e.g., GitHub, LinkedIn, Twitter) -->
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-github"></i></a>
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
-            <a href="#" style="color: #fff; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://github.com/Sandeep-Petwal" style="color: #fff; margin: 0 10px;"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sandeep-petwal/" style="color: #fff; margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://mobile.twitter.com/Sanju_Petwal" style="color: #fff; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
         </div>
 
-        <div style="text-align: center; margin-top: 20px;">
+        <div style="text-align: center; margin-top: 10px;">
             &copy; 2021 Sandeep Prasad. All rights reserved.
         </div>
     </footer>
