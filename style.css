@@ -1,0 +1,232 @@
+body {
+    font-size: 100px !;
+}
+
+h4 {
+    font-size: 30px !important;
+}
+
+.col-sm-10,
+.row {
+    background-color: #fcf7f7;
+}
+
+body {
+    font-family: 'Dosis', sans-serif !important;
+    font-size: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    margin-top: 1rem;
+}
+
+.card_qr {
+    background-color: #e3dbdb;
+    color: rgb(82, 82, 216);
+    border-radius: 20px;
+}
+
+.syllabus {
+    margin-top: -200px;
+}
+
+.pro {
+    position: relative;
+    bottom: 170px;
+    visibility: hidden;
+}
+
+.contribution {
+    padding: 10px 20px;
+    font-size: larger;
+}
+
+li {
+    font-family: monospace;
+}
+
+@media screen and (width <=500px) {
+    .qr {
+        visibility: hidden;
+    }
+
+    .contribution {
+        padding: 50px;
+    }
+
+    .pro {
+        margin-top: -150px;
+        visibility: visible;
+    }
+
+    li {
+        font-size: medium !important;
+        font-weight: bold !important;
+    }
+}
+
+marquee {
+    color: rgb(224, 92, 92);
+    font-weight: 700;
+    padding: 5px;
+    font-size: larger;
+}
+
+.visited_count{
+    /* font-size: 30px; */
+    color: #2697f3;
+}
+/* quote */
+
+/* Styles for devices wider than a tablet (e.g., desktops) */
+@media (min-width: 768px) {
+    marquee {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 400px !important;
+        height: 250px !important;
+    }
+
+    .card__description {
+        font-size: 20px !important;
+    }
+
+    .card_qr {
+        width: 25rem !important;
+    }
+    .contribution {
+        font-size: 30px !important;
+    }
+}
+
+
+
+.card_container {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    ;
+}
+
+.card {
+    transform: rotate(180deg);
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card svg {
+    transform: rotate(180deg);
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+}
+
+.card__title {
+    text-decoration: underline;
+    ;
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #777;
+    line-height: 1.4;
+}
+
+.card:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+/* animation 1 */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.slider {
+    overflow: hidden;
+    background-color: white;
+    margin: 0 15px;
+    height: 80px;
+    width: 20px;
+    border-radius: 30px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+        inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #2697f3,
+        inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+    animation: animate_2 2.5s ease-in-out infinite;
+    animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animate_2 {
+    0% {
+        transform: translateY(250px);
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(250px);
+        filter: hue-rotate(180deg);
+    }
+}
