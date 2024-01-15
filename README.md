@@ -1,4 +1,4 @@
-# UBTER CSE Engineering Syllabus Website
+# UBTER Computer Science & Engineering Syllabus Website
 
 This repository contains a website that provides an unofficial syllabus portal for UBTER CSE Engineering course. The website is designed to help students access and navigate through the syllabus for various semesters and subjects.
 
