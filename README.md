@@ -33,6 +33,6 @@ For any questions or inquiries, please contact:
 
 Sandeep Prasad
 
-Email: sandeeppetwal51@gmail.com
+Email: sanjupetwal51+code@gmail.com
 
 GitHub: Sandeep-Petwal
