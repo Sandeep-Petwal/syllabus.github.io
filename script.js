@@ -9,7 +9,7 @@ insta = function () {
 
 
 // Example using the Quotable API
-const apiUrl = "https://api.quotable.io/random?tags=motivational";
+const apiUrl = "https://api.quotable.io/random";
 
 let quote = document.getElementsByClassName("card__description")[0];
 fetch(apiUrl)
