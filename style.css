@@ -47,6 +47,7 @@ body {
 
 .syllabus {
     margin-top: -450px;
+    
 }
 
 .bottons {
@@ -83,29 +84,17 @@ body {
 li {
     font-family: monospace;
 }
-.insta{
-    color: rgb(123, 102, 102);
-    font-weight: bold;
-}
-.insta_text {
-    color: rgb(255, 254, 254);
-    font-weight: bold;
-}
 
-.insta_text:hover {
-    color: wheat;
-}
-
-.wa_text {
-    color: rgb(12, 113, 54);
-    font-weight: bold;
-}
 
 @media screen and (width <=500px) {
 
+    .pro {
+        margin-top: -470px !important;
+    }
     .blink{
         position: relative !important;
-        top: 20px !important;
+        /* top: 20px !important; */
+        visibility: hidden !important;
     }
     .syllabus {
         margin-top: -170px !important;
@@ -120,7 +109,6 @@ li {
     }
 
     .pro {
-        margin-top: -150px;
         visibility: visible;
     }
 
@@ -306,4 +294,24 @@ marquee {
     border: 1px solid rgb(9, 151, 212);
     margin: 10px;
     visibility: visible;
+}
+
+
+/* buttons whatsapp and insta */
+.insta{
+    color: rgb(123, 102, 102);
+    font-weight: bold;
+}
+.insta_text {
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+}
+
+.insta_text:hover {
+    color: wheat;
+}
+
+.wa_text {
+    color: rgb(12, 113, 54);
+    font-weight: bold;
 }
