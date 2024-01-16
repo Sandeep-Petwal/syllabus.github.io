@@ -2,9 +2,11 @@
 //onclick on loader
 loaderClick = function () {
     alert("hey 👋🏻, Thanks for visiting the site ❤️")
-
 }
-
+insta = function(){
+    // window.location.href = "https://t.me/sanju_petwal";
+    window.open('https://www.instagram.com/sanju.petwal', '_blank');
+}
 // Example using the Quotable API
 const apiUrl = "https://api.quotable.io/random?tags=motivational";
 
